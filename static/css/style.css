@@ -1,0 +1,10 @@
+.admin_area{
+    background-color: red;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.admin_area:hover{
+    background-color: #f33;
+    text-decoration: underline;
+}

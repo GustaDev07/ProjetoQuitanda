@@ -1,0 +1,54 @@
+{% extends 'modelo.html' %}
+{% block conteudo %}
+<div class="container">
+    <h1 class="mb-5 display-5 text-center">Identifique-se, por favor</h1>
+    <div class="row justify-content-center">
+        <form action="/acesso" method="post" class="text-center col-10 col-md-8 col-lg-6 needs-validation" novalidate>
+            <div class="form-floating mb-3">
+                <input type="text" name="usuario" id="usuario" class="form-control" placeholder="" autofocus required />
+                <label for="usuario">Usuário</label>
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" name="senha" id="senha" class="form-control" placeholder="" required />
+                <label for="senha">Senha</label>
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-check-label text-danger text-center">
+                <p>{{ msg }}</p>
+            </div>
+            DESENVOLVIMENTO DE SISTEMAS
+            <div class="form-check mb-3 d-flex justify-content-start">
+                <input type="checkbox" class="form-check-input border border-black border-1" name="chklembrar" id="chklembrar" />
+                <label for="chklembrar" class="form-check-label ms-3">Lembrar de mim</label>
+            </div>
+            <input type="submit" value="ACESSO" name="ACESSO" class="btn btn-lg btn-outline-danger" />
+            <p class="mt-3"> Esqueceu sua senha? <a href="/recuperarsenha.html"> Clique aqui </a> para se recuperá-la.</p>
+        </form>
+    </div>
+</div>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>
+
+{% endblock %}

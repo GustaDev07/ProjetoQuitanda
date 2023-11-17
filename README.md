@@ -42,7 +42,7 @@ Para configurar e executar o projeto em sua máquina local, siga estas etapas:
 
 
 1. **Clone o Repositório**:
-   1. git clone https://github.com/seu-usuario/projeto-quintanda.git
+   1. git clone https://github.com/GustaSenai/Quitanda-do-seu-Z---Flask.git
    2. cd projeto-quintanda
 2. **Instale Dependências**:
    1. Em seu console digite o comando: 'pip install Flask'
@@ -55,7 +55,7 @@ Para configurar e executar o projeto em sua máquina local, siga estas etapas:
 ## Estrutura do Projeto
 
 
-- `main.py`: O código principal do aplicativo Flask.
+- `quitanda.py`: O código principal do aplicativo Flask.
 - `templates/`: Diretório contendo os modelos HTML.
 - `static/`: Diretório contendo arquivos estáticos, como CSS e imagens.
 - `db_quitanda.py`: Arquivo com dados iniciais de produtos.
@@ -74,7 +74,7 @@ Contribuições são bem-vindas. Sinta-se à vontade para fazer um fork do repos
 
 
 ## Contato
-
+- [Gustavo Henrique da Silva]: Autor do projeto.
 
 - [Rafael Ribas]: Instrutor de Programação Web Front-End.
 
